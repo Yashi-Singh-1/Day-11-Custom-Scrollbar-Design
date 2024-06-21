@@ -1,0 +1,65 @@
+:root {
+    --scroll-thumb-color: #4caf50;
+    --scroll-thumb-hover-color: #ffeb3b;
+}
+
+body {
+    height: 2000px;
+    margin: 0;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background and text color */
+    color: white; /* Default text color */
+}
+
+/* Hide default scrollbar */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: var(--scroll-thumb-color);
+    transition: background 0.3s ease; /* Transition shorthand property */
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-thumb-hover-color);
+}
+
+.color-picker-container {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.color-picker-label {
+    margin-right: 10px;
+    color: white; /* Default text color */
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 60px; /* Adjust the margin to avoid overlap with the fixed color picker */
+    text-align: center;
+}
+
+.content p {
+    margin: 20px 0;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
