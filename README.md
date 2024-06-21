@@ -36,9 +36,6 @@
     <li><strong>Submit a Pull Request:</strong> Navigate to the "Pull Requests" tab of your forked repository and submit a pull request.</li>
 </ol>
 
-<h2>License</h2>
-<p>This project is licensed under the MIT License - see the <code>LICENSE</code> file for details.</p>
-
 <footer>
     <p>&copy; 2024 Yashi Singh</p>
 </footer>
